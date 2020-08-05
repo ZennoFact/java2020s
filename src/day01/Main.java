@@ -15,9 +15,14 @@ public class Main {
 		System.out.println(he + " is my friend.");
 
 		// 反対に，いかなる時でもデータが変わらないのが定数
-		String KCG = "京都コンピュータ学院";
+		final String KCG = "京都コンピュータ学院";
 		System.out.println(KCG + "　is Japan’s first computer education institute.");
-		float PI = 3.14f;
-		System.out.println("Pi is " + PI);
+		final float PI = 3.14f;
+		System.out.println("Pi is " + PI + ".");
+
+		// PI = 3.0f; // 一昔前に円周率は3という時期がありました
+		// he = 845; // 菅原道真は845年生まれらしい。だが，人の名前を表す変数で生年を表すのは変だよね。だからJavaではできない。
+		int hisYearOfBirth = 845; // 生年（整数）としてデータを保持するなら納得
+		System.out.println(he + " was born in " + hisYearOfBirth + ".");
 	}
 }
